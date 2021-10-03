@@ -14,14 +14,24 @@ def list_to_dict(some_list: list) -> dict:
 
 def color_name_to_hex(colors: list) -> list:
     # TODO: Trouver la valeur hex de chaque couleur dans la liste et créer une liste de tupple où le premier élément est le nom de la couleur et le deuxième est la valeur hex
-
-    return []
+    liste=[]
+    for x in colors:
+        liste.append ((x, cnames[x]))
+    return liste
 
 
 def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
+    liste =[]
+    x=0
+    while x < 10000:
+        if x >= 15 and x<= 350:
+            pass
+        else:
+            liste.append (x)
+        x+=1
 
-    return []
+    return liste
 
 
 def compute_mse(model_dict: dict) -> dict:
