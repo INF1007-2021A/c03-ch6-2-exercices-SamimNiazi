@@ -31,6 +31,8 @@ def compute_mse(model_dict: dict) -> dict:
             dictionnaire[clé] = x
     return dictionnaire
 
+    # {model:sum((res[0]- res[1])**2 for res in results)/ len (results) for model, results in model_dict.items()}
+
 
 def main() -> None:
     some_list = ["a", "b", "z", "patate"]
