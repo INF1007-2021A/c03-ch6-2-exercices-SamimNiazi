@@ -18,7 +18,7 @@ def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
 
 
-    return [x for x in range(10) if x<15 or x>350]
+    return [x for x in range(10000) if x<15 or x>350]
 
 
 def compute_mse(model_dict: dict) -> dict:
